@@ -27,6 +27,10 @@ services:
                 -Dftp.enabled=true
                 -Dftp.dataPortFrom=30000
                 -Dftp.dataPortTo=30099
+                -Dpdfrenderer.url=http://alfresco-pdf-renderer:8090/
+                -Dimagemagick.url=http://imagemagick:8090/
+                -Dlibreoffice.url=http://libreoffice:8090/
+                -Dtika.url=http://tika:8090/
                 -Dshare.host=localhost
                 -Daos.baseUrlOverwrite=http://localhost:8082/alfresco/aos
                 -Dmessaging.broker.url=\"failover:(tcp://activemq:61616)?timeout=3000&jms.useCompression=true\"
