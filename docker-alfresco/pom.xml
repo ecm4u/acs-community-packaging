@@ -7,7 +7,7 @@
     <parent>
         <groupId>org.alfresco</groupId>
         <artifactId>acs-community-packaging</artifactId>
-        <version>6.1.2-ga</version>
+        <version>6.1.2.ecm4u.1-ga-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
