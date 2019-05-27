@@ -33,7 +33,9 @@
             <modules>
                 <module>war</module>
                 <module>distribution</module>
+                <!--
                 <module>public-javadoc</module>
+                -->
                 <module>docker-alfresco</module>
             </modules>
         </profile>
@@ -47,14 +49,16 @@
     </scm>
 
     <distributionManagement>
-        <repository>
-            <id>alfresco-internal</id>
-            <url>https://artifacts.alfresco.com/nexus/content/repositories/releases</url>
-        </repository>
         <snapshotRepository>
-            <id>alfresco-internal-snapshots</id>
-            <url>https://artifacts.alfresco.com/nexus/content/repositories/snapshots</url>
+            <id>ecm4u-snapshots</id>
+            <name>ecm4u Snapshots</name>
+            <url>http://artifacts.ecm4u.intra:8081/artifactory/ecm4u-snapshots/</url>
         </snapshotRepository>
+        <repository>
+            <id>ecm4u-releases</id>
+            <name>ecm4u Snapshots</name>
+            <url>http://artifacts.ecm4u.intra:8081/artifactory/ecm4u-releases/</url>
+        </repository>
     </distributionManagement>
 
     <properties>
@@ -63,8 +67,8 @@
         <image.tag>latest</image.tag>
 
         <dependency.alfresco-core.version>7.3</dependency.alfresco-core.version>
-        <dependency.alfresco-data-model.version>8.8</dependency.alfresco-data-model.version>
-        <dependency.alfresco-repository.version>6.55</dependency.alfresco-repository.version>
+        <dependency.alfresco-data-model.version>8.8.ecm4u.1</dependency.alfresco-data-model.version>
+        <dependency.alfresco-repository.version>6.55.ecm4u.1</dependency.alfresco-repository.version>
         <dependency.alfresco-remote-api.version>6.38</dependency.alfresco-remote-api.version>
         <dependency.alfresco-hb-data-sender.version>1.0.9</dependency.alfresco-hb-data-sender.version>
         <dependency.alfresco-spring-webscripts.version>6.19</dependency.alfresco-spring-webscripts.version>
@@ -89,7 +93,7 @@
         <!-- Alfresco Office Services Module -->
         <alfresco.aos-module.version>1.2.0</alfresco.aos-module.version>
 
-        <installer.version.name>${project.version}</installer.version.name>
+        <installer.version.name>6.0.7-ga</installer.version.name>
         <alfresco.package.name>alfresco-community</alfresco.package.name>
         <alfresco.distribution.name>${alfresco.package.name}-distribution</alfresco.distribution.name>
 
