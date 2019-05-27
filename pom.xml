@@ -225,7 +225,7 @@
                 <exclusions>
                     <exclusion>
                         <groupId>com.mchange</groupId>
-                        <artifactId>*</artifactId>
+                        <artifactId>c3p0</artifactId>
                     </exclusion>
                 </exclusions>
             </dependency>
