@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>acs-community-packaging</artifactId>
     <name>Alfresco Content Services Community Packaging</name>
-    <version>6.1.2.ecm4u.1</version>
+    <version>6.1.2.ecm4u.2</version>
     <packaging>pom</packaging>
 
     <parent>
@@ -68,7 +68,7 @@
 
         <dependency.alfresco-core.version>7.5</dependency.alfresco-core.version>
         <dependency.alfresco-data-model.version>8.25.ecm4u.1</dependency.alfresco-data-model.version>
-        <dependency.alfresco-repository.version>7.43.ecm4u.1-SNAPSHOT</dependency.alfresco-repository.version>
+        <dependency.alfresco-repository.version>7.43.ecm4u.1</dependency.alfresco-repository.version>
         <dependency.alfresco-remote-api.version>7.35</dependency.alfresco-remote-api.version>
         <dependency.alfresco-hb-data-sender.version>1.0.9</dependency.alfresco-hb-data-sender.version>
         <dependency.alfresco-spring-webscripts.version>6.20</dependency.alfresco-spring-webscripts.version>
